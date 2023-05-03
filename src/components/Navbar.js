@@ -3,13 +3,12 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="m-3">
+    <Navbar expand="lg" className="m-3">
       <Container>
         <Link to="/" className="navbar-logo mx-3">
           <Navbar.Brand>JOBS2RIDE</Navbar.Brand>
@@ -23,31 +22,31 @@ const NavBar = () => {
             navbarScroll
           >
             <Nav className="nav-links">
-              <Link to="/">
-                <Nav.Link className="mx-3">HOME</Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link className="mx-3">FOR CANDIDATES</Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link className="mx-3">FOR EMPLOYEES</Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link className="mx-3">PAGES</Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link className="mx-3">BLOG</Nav.Link>
-              </Link>
+              <Nav.Link href="#" className="mx-3">
+                HOME
+              </Nav.Link>
+              <Nav.Link href="#" className="mx-3">
+                FOR CANDIDATES
+              </Nav.Link>
+              <Nav.Link href="#" className="mx-3">
+                FOR EMPLOYEES
+              </Nav.Link>
+              <Nav.Link href="#" className="mx-3">
+                PAGES
+              </Nav.Link>
+              <Nav.Link href="#" className="mx-3">
+                BLOG
+              </Nav.Link>
             </Nav>
           </Nav>
         </Navbar.Collapse>
 
         <ButtonToolbar>
           <Button className="me-2">
-            <i class="bi bi-person-fill"></i>Sign up
+            <i className="bi bi-person-fill"></i>Sign up
           </Button>
           <Button>
-            <i class="bi bi-lock-fill"></i>Log out
+            <i className="bi bi-lock-fill"></i>Log out
           </Button>
         </ButtonToolbar>
       </Container>

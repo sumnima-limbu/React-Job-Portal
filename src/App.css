@@ -46,3 +46,13 @@ a {
   width: 100%;
   height: 60px;
 }
+
+.login {
+  padding: 30px;
+}
+.light {
+  color: white;
+}
+.h-400 {
+  height: 100px;
+}

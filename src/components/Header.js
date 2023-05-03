@@ -1,11 +1,11 @@
 import React from "react";
-import Banner from "../images/Banner.jpg";
+import Banner from "../images/background/Banner.jpg";
 import { Button, Form } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 
 const Header = () => {
   return (
-    <div class="page-content">
+    <div className="page-content">
       <div
         style={{
           display: "flex",
@@ -15,7 +15,6 @@ const Header = () => {
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundImage: `url(${Banner})`,
-          //   opacity: 0.8,
         }}
         src={Banner}
         alt="Banner Image"
